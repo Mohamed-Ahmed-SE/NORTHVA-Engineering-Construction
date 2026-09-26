@@ -1,14 +1,14 @@
 import type { Metadata, Viewport } from "next";
-import { Syne, Inter, JetBrains_Mono } from "next/font/google";
+import { Barlow_Condensed, Inter, JetBrains_Mono } from "next/font/google";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { SmoothScroll } from "@/components/providers/SmoothScroll";
 import "./globals.css";
 
-const syne = Syne({
-  variable: "--font-syne",
+const barlowCondensed = Barlow_Condensed({
+  variable: "--font-barlow-condensed",
   subsets: ["latin"],
-  weight: ["500", "700", "800"],
+  weight: ["500", "600", "700", "800", "900"],
   display: "swap",
 });
 
@@ -82,7 +82,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${syne.variable} ${inter.variable} ${jetbrainsMono.variable} scroll-smooth`}
+      className={`${barlowCondensed.variable} ${inter.variable} ${jetbrainsMono.variable} scroll-smooth`}
     >
       <body className="bg-[#101312] text-[#F4F2EC] selection:bg-[#E6532F] selection:text-white font-sans antialiased min-h-screen flex flex-col">
         <SmoothScroll>

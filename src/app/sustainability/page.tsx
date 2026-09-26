@@ -4,6 +4,7 @@ import Link from "next/link";
 import { ArrowUpRight, Leaf, Shield, Recycle, SunMedium, Droplets, Wind } from "lucide-react";
 import { SUSTAINABILITY_INFO } from "@/data/sustainability";
 import { Counter } from "@/components/ui/Counter";
+import Breadcrumb from "@/components/ui/Breadcrumb";
 
 export const metadata: Metadata = {
   title: "Sustainability & ESG | NORTHVA Engineering & Construction",
@@ -24,6 +25,8 @@ export default function SustainabilityPage() {
   return (
     <div className="pt-28 sm:pt-36 pb-32 bg-[#0D100F] text-[#F4F2EC]">
       <div className="max-w-[1520px] mx-auto px-6 sm:px-8 lg:px-12">
+        <Breadcrumb items={[{ label: "Sustainability & ESG" }]} />
+
         {/* Page Hero */}
         <div className="pb-16 border-b border-[#F4F2EC]/10">
           <div className="flex items-center gap-3 mb-4">

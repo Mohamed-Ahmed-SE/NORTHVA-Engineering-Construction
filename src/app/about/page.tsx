@@ -10,6 +10,7 @@ import {
   REGIONAL_OFFICES,
 } from "@/data/company";
 import { Counter } from "@/components/ui/Counter";
+import Breadcrumb from "@/components/ui/Breadcrumb";
 
 export const metadata: Metadata = {
   title: "About Us | NORTHVA Engineering & Construction",
@@ -21,6 +22,8 @@ export default function AboutPage() {
   return (
     <div className="pt-28 sm:pt-36 pb-32 bg-[#0D100F] text-[#F4F2EC]">
       <div className="max-w-[1520px] mx-auto px-6 sm:px-8 lg:px-12">
+        <Breadcrumb items={[{ label: "About Northva" }]} />
+
         {/* Page Hero */}
         <div className="pb-16 sm:pb-24 border-b border-[#F4F2EC]/10">
           <div className="flex items-center gap-3 mb-4">
@@ -52,7 +55,7 @@ export default function AboutPage() {
         {/* Hero Architectural Visual */}
         <div className="my-16 relative aspect-[21/9] w-full overflow-hidden bg-[#131715] border border-[#F4F2EC]/10">
           <Image
-            src="https://images.unsplash.com/photo-1487958449943-2429e8be8625?auto=format&fit=crop&w=2600&q=90"
+            src="/images/about/about-operations.jpg"
             alt="NORTHVA engineering construction excellence"
             fill
             priority

@@ -15,7 +15,7 @@ export function TimelineSection() {
                 Institutional Evolution
               </span>
             </div>
-            <h2 className="font-display text-4xl sm:text-5xl lg:text-6xl font-extrabold uppercase text-[#F4F2EC] tracking-tight">
+            <h2 className="heading-section font-display font-extrabold uppercase text-[#F4F2EC] tracking-tight">
               Trajectory & Milestones
             </h2>
           </div>

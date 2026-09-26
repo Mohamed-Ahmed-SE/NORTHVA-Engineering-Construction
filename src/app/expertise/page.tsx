@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowUpRight, CheckCircle2 } from "lucide-react";
 import { SERVICES } from "@/data/services";
+import Breadcrumb from "@/components/ui/Breadcrumb";
 
 export const metadata: Metadata = {
   title: "Expertise & Services | NORTHVA Engineering & Construction",
@@ -14,6 +15,8 @@ export default function ExpertisePage() {
   return (
     <div className="pt-28 sm:pt-36 pb-32 bg-[#101312] text-[#F4F2EC]">
       <div className="max-w-[1520px] mx-auto px-6 sm:px-8 lg:px-12">
+        <Breadcrumb items={[{ label: "Engineering Expertise" }]} />
+
         {/* Page Hero */}
         <div className="pb-16 border-b border-[#F4F2EC]/10">
           <div className="flex items-center gap-3 mb-4">
@@ -62,7 +65,7 @@ export default function ExpertisePage() {
                     </span>
                   </div>
 
-                  <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold uppercase text-[#F4F2EC] tracking-tight">
+                  <h2 className="heading-section font-display font-bold uppercase text-[#F4F2EC] tracking-tight">
                     {service.title}
                   </h2>
 

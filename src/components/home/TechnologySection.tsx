@@ -34,7 +34,7 @@ export function TechnologySection() {
                 04 // Digital Construction Stack
               </span>
             </div>
-            <h2 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold uppercase text-[#F4F2EC] tracking-tight">
+            <h2 className="heading-section font-display font-bold uppercase text-[#F4F2EC] tracking-tight">
               Smarter Construction Through Technology.
             </h2>
           </div>

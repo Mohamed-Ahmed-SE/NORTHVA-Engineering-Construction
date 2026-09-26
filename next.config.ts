@@ -2,13 +2,18 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   images: {
-    remotePatterns: [
+    formats: ["image/avif", "image/webp"],
+  },
+  async redirects() {
+    return [
       {
-        protocol: "https",
-        hostname: "images.unsplash.com",
+        source: "/services",
+        destination: "/expertise",
+        permanent: true,
       },
-    ],
+    ];
   },
 };
 
 export default nextConfig;
+

@@ -18,7 +18,7 @@ export const SECTORS: SectorItem[] = [
       "We deliver Class-A office towers, business parks, corporate headquarters, and vibrant mixed-use retail environments that redefine regional skylines and attract multinational tenants.",
     deliveredArea: "2,240,000 m²",
     completedProjects: 28,
-    image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1600&q=85",
+    image: "/images/projects/meridian-corporate-headquarters-gallery-3.jpg",
     keyHighlights: [
       "Large-span column-free floor plates",
       "LEED Gold and Platinum certified designs",
@@ -33,7 +33,7 @@ export const SECTORS: SectorItem[] = [
       "From high-rise residential towers in urban centers to expansive gated community compounds, NORTHVA delivers enduring living environments designed around longevity and wellbeing.",
     deliveredArea: "1,850,000 m²",
     completedProjects: 22,
-    image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=85",
+    image: "/images/sectors/residential.jpg",
     keyHighlights: [
       "Over 6,500 residential units delivered",
       "Acoustic isolation & smart energy metering",
@@ -48,7 +48,7 @@ export const SECTORS: SectorItem[] = [
       "Delivering turnkey luxury hotel properties that balance complex back-of-house engineering with breathtaking guest-facing architectural craftsmanship.",
     deliveredArea: "680,000 m²",
     completedProjects: 14,
-    image: "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1600&q=85",
+    image: "/images/sectors/hospitality.jpg",
     keyHighlights: [
       "Comprehensive international hotel brand compliance",
       "Seawater desalination and coastal stabilization",
@@ -63,7 +63,7 @@ export const SECTORS: SectorItem[] = [
       "Specialized tertiary hospitals, research centers, and diagnostic facilities demanding surgical cleanliness, triple power redundancy, and medical gas precision.",
     deliveredArea: "420,000 m²",
     completedProjects: 9,
-    image: "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=1600&q=85",
+    image: "/images/sectors/healthcare.jpg",
     keyHighlights: [
       "JCI hospital standards and ISO cleanroom ratings",
       "Heavy radiation concrete bunker construction",
@@ -78,7 +78,7 @@ export const SECTORS: SectorItem[] = [
       "Strategic distribution centers, cold storage complexes, and heavy manufacturing facilities built to withstand intensive operational throughput.",
     deliveredArea: "1,120,000 m²",
     completedProjects: 12,
-    image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1600&q=85",
+    image: "/images/sectors/industrial.jpg",
     keyHighlights: [
       "TR34 FM2 superflat industrial floor slabs",
       "Multi-megawatt rooftop solar microgrids",
@@ -93,7 +93,7 @@ export const SECTORS: SectorItem[] = [
       "Heavy civil engineering supporting urban expansion: multi-tier highway interchanges, marine breakwaters, deep trunk sewers, and metropolitan utility networks.",
     deliveredArea: "530,000 m² footprint",
     completedProjects: 7,
-    image: "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1600&q=85",
+    image: "/images/sectors/infrastructure.jpg",
     keyHighlights: [
       "Over 240 kilometers of utility networks",
       "Deep marine quay walls and revetments",

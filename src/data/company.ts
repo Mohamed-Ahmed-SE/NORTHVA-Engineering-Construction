@@ -127,28 +127,28 @@ export const LEADERSHIP: LeadershipMember[] = [
     name: "Omar El-Naggar",
     role: "Chief Executive Officer",
     bio: "Over 25 years of civil engineering and construction management experience across major MENA infrastructure and mega-developments.",
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=800&q=85",
+    image: "/images/leadership/omar-el-naggar.jpg",
   },
   {
     id: "karim-mansour",
     name: "Karim Mansour",
     role: "Chief Operating Officer",
     bio: "Leads NORTHVA's regional operations, supply chain logistics, and multi-site project execution teams across Egypt and the GCC.",
-    image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=800&q=85",
+    image: "/images/leadership/karim-mansour.jpg",
   },
   {
     id: "sarah-khalil",
     name: "Sarah Khalil",
     role: "Engineering Director",
     bio: "Pioneered NORTHVA's BIM and computational structural engineering workflows, spearheading high-complexity engineering design.",
-    image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=85",
+    image: "/images/leadership/sarah-khalil.jpg",
   },
   {
     id: "ahmed-nassar",
     name: "Ahmed Nassar",
     role: "Commercial Director",
     bio: "Oversees contractual frameworks, commercial risk, strategic procurement, and value engineering for projects surpassing $2B in total value.",
-    image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=800&q=85",
+    image: "/images/leadership/ahmed-nassar.jpg",
   },
 ];
 

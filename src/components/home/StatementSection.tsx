@@ -34,7 +34,7 @@ export function StatementSection() {
         className="absolute inset-0 w-full h-[125%] -top-[12%] pointer-events-none will-change-transform z-0"
       >
         <Image
-          src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=2600&q=90"
+          src="/images/statement-monolith.jpg"
           alt="Architectural structure under construction"
           fill
           sizes="100vw"

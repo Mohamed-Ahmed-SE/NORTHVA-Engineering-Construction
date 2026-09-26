@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { PROJECTS } from "@/data/projects";
 import { ProjectsArchiveClient } from "@/components/projects/ProjectsArchiveClient";
+import Breadcrumb from "@/components/ui/Breadcrumb";
 
 export const metadata: Metadata = {
   title: "Projects Archive | NORTHVA Engineering & Construction",
@@ -12,6 +13,8 @@ export default function ProjectsPage() {
   return (
     <div className="pt-28 sm:pt-36 pb-32 bg-[#101312] text-[#F4F2EC]">
       <div className="max-w-[1520px] mx-auto px-6 sm:px-8 lg:px-12">
+        <Breadcrumb items={[{ label: "Projects Archive" }]} />
+
         {/* Page Hero Header */}
         <div className="pb-16 border-b border-[#F4F2EC]/10">
           <div className="flex items-center gap-3 mb-4">

@@ -2,6 +2,8 @@ import type { Metadata, Viewport } from "next";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { SmoothScroll } from "@/components/providers/SmoothScroll";
+import PageLoader from "@/components/ui/PageLoader";
+import BackToTop from "@/components/ui/BackToTop";
 import "./globals.css";
 
 export const viewport: Viewport = {
@@ -12,6 +14,7 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://northva-eng.com"),
   title: {
     default: "NORTHVA Engineering & Construction | Engineering What Comes Next",
     template: "%s | NORTHVA Engineering & Construction",
@@ -60,12 +63,23 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body className="bg-[#101312] text-[#F4F2EC] selection:bg-[#E6532F] selection:text-white font-sans antialiased min-h-screen flex flex-col">
+        <PageLoader />
+        <a
+          href="#main-content"
+          className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[999999] focus:px-4 focus:py-2 focus:bg-[#E6532F] focus:text-white focus:font-mono focus:text-xs uppercase tracking-wider"
+        >
+          Skip to main content
+        </a>
         <SmoothScroll>
           <Header />
-          <main className="flex-grow">{children}</main>
+          <main id="main-content" className="flex-grow">
+            {children}
+          </main>
           <Footer />
+          <BackToTop />
         </SmoothScroll>
       </body>
     </html>
   );
 }
+

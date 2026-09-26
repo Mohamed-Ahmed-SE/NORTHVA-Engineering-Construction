@@ -20,7 +20,7 @@ export function FeaturedProjectsSection() {
                 03 // Landmark Portfolio
               </span>
             </div>
-            <h2 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold uppercase text-[#F4F2EC] tracking-tight">
+            <h2 className="heading-section font-display font-bold uppercase text-[#F4F2EC] tracking-tight">
               Selected Projects
             </h2>
           </div>

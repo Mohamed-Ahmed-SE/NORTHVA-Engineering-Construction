@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { ContactClient } from "@/components/contact/ContactClient";
+import Breadcrumb from "@/components/ui/Breadcrumb";
 
 export const metadata: Metadata = {
   title: "Contact & Regional Hubs | NORTHVA Engineering & Construction",
@@ -11,6 +12,8 @@ export default function ContactPage() {
   return (
     <div className="pt-28 sm:pt-36 pb-32 bg-[#0D100F] text-[#F4F2EC]">
       <div className="max-w-[1520px] mx-auto px-6 sm:px-8 lg:px-12">
+        <Breadcrumb items={[{ label: "Direct Engagement & Hubs" }]} />
+
         {/* Page Hero */}
         <div className="pb-16 sm:pb-20 border-b border-[#F4F2EC]/10 mb-16">
           <div className="flex items-center gap-3 mb-4">

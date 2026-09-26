@@ -18,7 +18,7 @@ export function StatisticsSection() {
                 02 // Institutional Scale
               </span>
             </div>
-            <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold uppercase text-[#F4F2EC] tracking-tight">
+            <h2 className="heading-section font-display font-bold uppercase text-[#F4F2EC] tracking-tight">
               Disciplined Scale. Verifiable Outcomes.
             </h2>
           </div>

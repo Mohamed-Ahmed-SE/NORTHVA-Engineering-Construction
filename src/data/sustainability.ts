@@ -15,7 +15,7 @@ export const SUSTAINABILITY_INFO = {
     label: "Target reduction in operational carbon emissions by 2030 across all delivered assets.",
     baseline: "Measured against standard regional benchmark performance data.",
   },
-  image: "https://images.unsplash.com/photo-1518780664697-55e3ad937233?auto=format&fit=crop&w=2000&q=85",
+  image: "/images/sustainability/sustainability-hero.jpg",
   focusAreas: [
     {
       number: "01",

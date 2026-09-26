@@ -63,17 +63,19 @@ export function HeroSection() {
         className="absolute inset-0 w-full h-[120%] -top-[10%] z-0 will-change-transform pointer-events-none"
       >
         <Image
-          src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=2600&q=90"
-          alt="Monumental high-rise structural engineering and architectural facade"
+          src="/images/hero-monolith.jpg"
+          alt="NORTHVA monumental mega-tower under construction at twilight with illuminated cranes"
           fill
           priority
+          unoptimized={true}
           sizes="100vw"
-          className="object-cover object-center brightness-[0.38] contrast-[1.12]"
+          className="object-cover object-[center_35%] brightness-[0.88] contrast-[1.06]"
         />
-        {/* Subtle architectural vignette & scrims */}
-        <div className="absolute inset-0 bg-gradient-to-t from-[#0B0E0D] via-[#0B0E0D]/50 to-[#0B0E0D]/75" />
-        <div className="absolute inset-0 bg-gradient-to-r from-[#0B0E0D]/90 via-transparent to-[#0B0E0D]/60" />
-        <div className="absolute inset-0 architectural-grid opacity-25" />
+        {/* Balanced directional scrims - preserves photo clarity while keeping typography crystal readable */}
+        <div className="absolute inset-0 bg-gradient-to-r from-[#0D100F]/92 via-[#0D100F]/60 lg:via-[#0D100F]/45 to-transparent w-full" />
+        <div className="absolute top-0 inset-x-0 h-40 bg-gradient-to-b from-[#0D100F]/85 via-[#0D100F]/40 to-transparent" />
+        <div className="absolute bottom-0 inset-x-0 h-48 bg-gradient-to-t from-[#0D100F] via-[#0D100F]/70 to-transparent" />
+        <div className="absolute inset-0 architectural-grid opacity-10" />
       </div>
 
       {/* Blueprint Corner Registration Marks */}

@@ -13,22 +13,22 @@ export const metadata: Metadata = {
 
 export default function SustainabilityPage() {
   const iconList = [
-    <SunMedium key="sun" className="w-5 h-5 text-[#E6532F]" />,
-    <Recycle key="rec" className="w-5 h-5 text-[#E6532F]" />,
-    <Shield key="shi" className="w-5 h-5 text-[#E6532F]" />,
-    <Droplets key="drop" className="w-5 h-5 text-[#E6532F]" />,
-    <Leaf key="leaf" className="w-5 h-5 text-[#E6532F]" />,
-    <Wind key="wind" className="w-5 h-5 text-[#E6532F]" />,
+    <SunMedium key="sun" className="w-5 h-5 text-[#E04E26]" />,
+    <Recycle key="rec" className="w-5 h-5 text-[#E04E26]" />,
+    <Shield key="shi" className="w-5 h-5 text-[#E04E26]" />,
+    <Droplets key="drop" className="w-5 h-5 text-[#E04E26]" />,
+    <Leaf key="leaf" className="w-5 h-5 text-[#E04E26]" />,
+    <Wind key="wind" className="w-5 h-5 text-[#E04E26]" />,
   ];
 
   return (
-    <div className="pt-28 sm:pt-36 pb-32 bg-[#101312] text-[#F4F2EC]">
+    <div className="pt-28 sm:pt-36 pb-32 bg-[#0D100F] text-[#F4F2EC]">
       <div className="max-w-[1520px] mx-auto px-6 sm:px-8 lg:px-12">
         {/* Page Hero */}
         <div className="pb-16 border-b border-[#F4F2EC]/10">
           <div className="flex items-center gap-3 mb-4">
-            <span className="w-8 h-[1px] bg-[#E6532F]" />
-            <span className="font-mono text-xs uppercase tracking-[0.25em] text-[#E6532F]">
+            <span className="w-8 h-[1px] bg-[#E04E26]" />
+            <span className="font-mono text-xs uppercase tracking-[0.25em] text-[#E04E26]">
               ESG & Decarbonization Framework
             </span>
           </div>

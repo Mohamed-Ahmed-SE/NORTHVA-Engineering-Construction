@@ -108,12 +108,13 @@ export function ExpertiseSection() {
                   src={activeService.image}
                   alt={activeService.title}
                   fill
+                  unoptimized={true}
                   sizes="40vw"
                   className="object-cover transition-transform duration-700 hover:scale-105"
                   priority
                 />
-                <div className="absolute top-4 left-4 font-mono text-xs px-2.5 py-1 bg-[#101312]/90 backdrop-blur-sm text-[#E6532F] border border-[#F4F2EC]/10">
-                  {activeService.number} / Capability
+                <div className="absolute top-4 left-4 font-mono text-[10px] uppercase tracking-wider px-2.5 py-1 bg-[#0B0E0D]/90 backdrop-blur-sm text-[#E6532F] border border-[#F4F2EC]/15">
+                  DISCIPLINE {activeService.number}
                 </div>
               </div>
 

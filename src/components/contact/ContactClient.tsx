@@ -243,10 +243,10 @@ export function ContactClient() {
             <button
               type="submit"
               disabled={isSubmitting}
-              className="w-full sm:w-auto px-10 py-4 bg-[#E6532F] hover:bg-[#d04623] text-white font-mono text-xs uppercase tracking-[0.2em] font-semibold transition-all duration-300 disabled:opacity-50 cursor-pointer flex items-center justify-center gap-3"
+              className="btn-arch-primary group cursor-pointer disabled:opacity-50"
             >
               <span>{isSubmitting ? "Dispatching..." : "Transmit Project Inquiry"}</span>
-              <ArrowUpRight className="w-4 h-4" />
+              <ArrowUpRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
             </button>
           </form>
         )}

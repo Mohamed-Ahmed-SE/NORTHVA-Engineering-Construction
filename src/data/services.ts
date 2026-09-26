@@ -19,7 +19,7 @@ export const SERVICES: ServiceItem[] = [
       "Complete construction delivery across commercial, residential, hospitality, industrial and mixed-use developments with disciplined project execution.",
     fullDesc:
       "From deep foundation excavations to final architectural envelope handover, NORTHVA operates as the principal general contractor for complex mega-projects. We direct site operations, subcontracted specialties, heavy equipment fleets, and rigorous safety protocols with uncompromising engineering oversight.",
-    image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1800&q=85",
+    image: "https://images.unsplash.com/photo-1541888946425-d0fbb186156a?auto=format&fit=crop&w=1800&q=85",
     capabilities: [
       "Subterranean excavation, piling & retention works",
       "Reinforced concrete frames & post-tensioned slabs",
@@ -39,7 +39,7 @@ export const SERVICES: ServiceItem[] = [
       "Road networks, utility systems, drainage, water infrastructure and large-scale site development moving modern regional cities forward.",
     fullDesc:
       "Our civil infrastructure division engineers the foundational lifelines of modern metropolitan developments. We execute large-scale earthmoving, deep sewer trunk mains, potable water distribution grids, storm surge attenuation systems, and multi-lane arterial roadway corridors across demanding terrains.",
-    image: "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1800&q=85",
+    image: "https://images.unsplash.com/photo-1545558014-8692077e9b5c?auto=format&fit=crop&w=1800&q=85",
     capabilities: [
       "Highway interchanges, arterial roads & bridges",
       "Deep stormwater drainage & culvert networks",

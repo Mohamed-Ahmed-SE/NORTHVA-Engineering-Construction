@@ -110,11 +110,12 @@ export default function ExpertisePage() {
                     src={service.image}
                     alt={service.title}
                     fill
+                    unoptimized={true}
                     sizes="(max-width: 1024px) 100vw, 50vw"
                     className="object-cover filter brightness-95"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#101312]/60 via-transparent to-transparent" />
-                  <div className="absolute bottom-6 left-6 font-mono text-xs px-3 py-1.5 bg-[#101312]/90 backdrop-blur-md border border-[#F4F2EC]/15 text-[#F4F2EC]">
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#0D100F]/60 via-transparent to-transparent" />
+                  <div className="absolute bottom-6 left-6 font-mono text-xs px-3 py-1.5 bg-[#0D100F]/90 backdrop-blur-md border border-[#F4F2EC]/15 text-[#F4F2EC]">
                     {service.number} // Operational Division
                   </div>
                 </div>
@@ -124,21 +125,21 @@ export default function ExpertisePage() {
         </div>
 
         {/* Bottom CTA Block */}
-        <div className="mt-20 p-12 bg-[#141816] border border-[#F4F2EC]/15 flex flex-col md:flex-row items-center justify-between gap-8">
+        <div className="mt-20 p-10 sm:p-14 bg-[#131715] border border-[#F4F2EC]/15 flex flex-col md:flex-row items-center justify-between gap-8">
           <div>
             <h3 className="font-display text-2xl font-bold uppercase text-[#F4F2EC]">
               Require Specialized Engineering Tenders?
             </h3>
-            <p className="mt-2 text-sm text-[#B8BAB5] font-light max-w-xl">
+            <p className="mt-2 text-sm text-[#A3A7A1] font-normal max-w-xl">
               Our pre-construction and value engineering teams can evaluate your drawings and deliver an optimized constructability report.
             </p>
           </div>
           <Link
             href="/contact"
-            className="inline-flex items-center gap-3 px-8 py-4 bg-[#E6532F] text-white font-mono text-xs uppercase tracking-[0.16em] hover:bg-[#d04623] transition-colors shrink-0"
+            className="btn-arch-primary group cursor-pointer shrink-0"
           >
             <span>Submit Tender Package</span>
-            <ArrowUpRight className="w-4 h-4" />
+            <ArrowUpRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
           </Link>
         </div>
       </div>

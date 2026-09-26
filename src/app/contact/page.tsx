@@ -9,20 +9,20 @@ export const metadata: Metadata = {
 
 export default function ContactPage() {
   return (
-    <div className="pt-28 sm:pt-36 pb-32 bg-[#101312] text-[#F4F2EC]">
+    <div className="pt-28 sm:pt-36 pb-32 bg-[#0D100F] text-[#F4F2EC]">
       <div className="max-w-[1520px] mx-auto px-6 sm:px-8 lg:px-12">
         {/* Page Hero */}
         <div className="pb-16 sm:pb-20 border-b border-[#F4F2EC]/10 mb-16">
           <div className="flex items-center gap-3 mb-4">
-            <span className="w-8 h-[1px] bg-[#E6532F]" />
-            <span className="font-mono text-xs uppercase tracking-[0.25em] text-[#E6532F]">
+            <span className="w-8 h-[1px] bg-[#E04E26]" />
+            <span className="font-mono text-xs uppercase tracking-[0.25em] text-[#E04E26]">
               Direct Engagement
             </span>
           </div>
 
           <h1 className="heading-hero font-display font-extrabold uppercase text-[#F4F2EC] tracking-tight">
             Let&apos;s Build Something <br />
-            <span className="text-[#E6532F]">Significant.</span>
+            <span className="text-[#E04E26]">Significant.</span>
           </h1>
 
           <div className="mt-8 grid grid-cols-1 lg:grid-cols-12 gap-8 pt-8 border-t border-[#F4F2EC]/10">

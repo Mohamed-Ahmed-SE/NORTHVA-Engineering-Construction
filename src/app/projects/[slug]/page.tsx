@@ -87,19 +87,25 @@ export default async function ProjectDetailPage({ params }: ProjectPageProps) {
         </div>
 
         {/* Large Hero Photography */}
-        <div className="relative aspect-[16/9] sm:aspect-[21/9] w-full overflow-hidden bg-[#161B19] border border-[#F4F2EC]/10">
+        <div className="relative aspect-[16/9] sm:aspect-[21/9] w-full overflow-hidden bg-[#121614] border border-[#F4F2EC]/15">
           <Image
             src={project.heroImage}
             alt={project.title}
             fill
             priority
+            unoptimized={true}
             sizes="100vw"
             className="object-cover object-center brightness-[0.92]"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#101312]/80 via-transparent to-transparent opacity-40" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#0B0E0D]/90 via-transparent to-transparent opacity-50" />
 
-          {/* Overlay Coordinates */}
-          <div className="absolute bottom-6 right-6 font-mono text-[11px] px-3 py-1.5 bg-[#101312]/90 backdrop-blur-sm border border-[#F4F2EC]/20 text-[#B8BAB5]">
+          {/* Overlay Coordinates & Plate Number */}
+          <div className="absolute top-6 left-6 font-mono text-[11px] px-3 py-1.5 bg-[#0B0E0D]/90 backdrop-blur-sm border border-[#F4F2EC]/20 text-[#F4F2EC] flex items-center gap-2">
+            <span className="w-1.5 h-1.5 bg-[#E6532F]" />
+            <span>PROJECT DOSSIER // {project.slug.toUpperCase()}</span>
+          </div>
+
+          <div className="absolute bottom-6 right-6 font-mono text-[11px] px-3 py-1.5 bg-[#0B0E0D]/90 backdrop-blur-sm border border-[#F4F2EC]/20 text-[#B8BAB5]">
             Coordinates: {project.coordinates}
           </div>
         </div>
@@ -251,6 +257,7 @@ export default async function ProjectDetailPage({ params }: ProjectPageProps) {
                     src={imgUrl}
                     alt={`${project.title} documentation view ${i + 1}`}
                     fill
+                    unoptimized={true}
                     sizes="(max-width: 768px) 100vw, 33vw"
                     className="object-cover transition-transform duration-700 group-hover:scale-105 filter brightness-95 group-hover:brightness-100"
                   />
@@ -295,6 +302,7 @@ export default async function ProjectDetailPage({ params }: ProjectPageProps) {
                       src={rel.heroImage}
                       alt={rel.title}
                       fill
+                      unoptimized={true}
                       sizes="(max-width: 768px) 100vw, 33vw"
                       className="object-cover transition-transform duration-500 group-hover:scale-105"
                     />

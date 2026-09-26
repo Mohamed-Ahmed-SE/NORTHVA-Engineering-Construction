@@ -114,27 +114,28 @@ export function ProjectsArchiveClient({ initialProjects }: ProjectsArchiveClient
                     src={project.heroImage}
                     alt={project.title}
                     fill
+                    unoptimized={true}
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     className="object-cover transition-transform duration-700 group-hover:scale-105 filter brightness-90 group-hover:brightness-100"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#101312]/80 via-transparent to-transparent opacity-60" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#0D100F]/80 via-transparent to-transparent opacity-60" />
 
-                  <span className="absolute top-3 left-3 font-mono text-[10px] uppercase tracking-wider px-2 py-1 bg-[#101312]/90 backdrop-blur-sm border border-[#F4F2EC]/15 text-[#F4F2EC]">
+                  <span className="absolute top-3 left-3 font-mono text-[10px] uppercase tracking-wider px-2 py-1 bg-[#0D100F]/90 backdrop-blur-sm border border-[#F4F2EC]/15 text-[#F4F2EC]">
                     {project.sector}
                   </span>
                 </Link>
 
                 {/* Title & Location */}
                 <div className="space-y-2">
-                  <div className="font-mono text-[11px] text-[#B8BAB5]">
+                  <div className="font-mono text-[11px] text-[#A3A7A1]">
                     {project.location}
                   </div>
-                  <h3 className="font-display text-xl sm:text-2xl font-bold uppercase text-[#F4F2EC] tracking-tight group-hover:text-[#E6532F] transition-colors duration-200">
+                  <h3 className="font-display text-xl sm:text-2xl font-bold uppercase text-[#F4F2EC] tracking-tight group-hover:text-[#E04E26] transition-colors duration-200">
                     <Link href={`/projects/${project.slug}`}>
                       {project.title}
                     </Link>
                   </h3>
-                  <p className="mt-2 text-xs text-[#B8BAB5] leading-relaxed line-clamp-2">
+                  <p className="mt-2 text-xs text-[#A3A7A1] leading-relaxed line-clamp-2">
                     {project.summary}
                   </p>
                 </div>
@@ -143,12 +144,12 @@ export function ProjectsArchiveClient({ initialProjects }: ProjectsArchiveClient
               {/* Technical Footnote Specs */}
               <div className="mt-8 pt-5 border-t border-[#F4F2EC]/10 flex items-center justify-between text-xs font-mono">
                 <div>
-                  <span className="text-[10px] text-[#B8BAB5]/60 uppercase block">Area</span>
+                  <span className="text-[10px] text-[#A3A7A1]/70 uppercase block">Area</span>
                   <span className="text-[#F4F2EC] font-semibold">{project.builtUpArea}</span>
                 </div>
                 <Link
                   href={`/projects/${project.slug}`}
-                  className="inline-flex items-center gap-1.5 text-[#B8BAB5] group-hover:text-[#E6532F] transition-colors"
+                  className="inline-flex items-center gap-1.5 text-[#A3A7A1] group-hover:text-[#E04E26] transition-colors"
                 >
                   <span>Explore Spec</span>
                   <ArrowUpRight className="w-3.5 h-3.5 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
@@ -158,11 +159,11 @@ export function ProjectsArchiveClient({ initialProjects }: ProjectsArchiveClient
           ))}
         </div>
       ) : (
-        <div className="py-24 text-center border border-[#F4F2EC]/10 bg-[#121614] p-8">
+        <div className="py-24 text-center border border-[#F4F2EC]/10 bg-[#131715] p-8">
           <p className="font-display text-2xl uppercase text-[#F4F2EC]">
             No matching projects found
           </p>
-          <p className="font-mono text-xs text-[#B8BAB5] mt-2">
+          <p className="font-mono text-xs text-[#A3A7A1] mt-2">
             Try adjusting your search criteria or selecting &apos;All&apos; sectors.
           </p>
           <button
@@ -170,7 +171,7 @@ export function ProjectsArchiveClient({ initialProjects }: ProjectsArchiveClient
               setSelectedSector("All");
               setSearchQuery("");
             }}
-            className="mt-6 px-6 py-2.5 bg-[#E6532F] text-white font-mono text-xs uppercase tracking-wider cursor-pointer"
+            className="mt-6 btn-arch-primary cursor-pointer"
           >
             Reset Filters
           </button>

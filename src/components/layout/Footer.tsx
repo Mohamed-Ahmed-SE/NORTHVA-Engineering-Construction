@@ -75,10 +75,10 @@ export function Footer() {
               </span>
               <Link
                 href="/contact"
-                className="inline-flex items-center gap-2 px-5 py-2.5 bg-[#E6532F] text-white text-xs font-mono uppercase tracking-[0.14em] hover:bg-[#d44825] transition-colors"
+                className="btn-arch-primary group cursor-pointer"
               >
                 <span>Initiate RFP</span>
-                <ArrowUpRight className="w-3.5 h-3.5" />
+                <ArrowUpRight className="w-3.5 h-3.5 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
               </Link>
             </div>
           </div>

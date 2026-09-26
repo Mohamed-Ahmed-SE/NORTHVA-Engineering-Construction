@@ -19,20 +19,20 @@ export const metadata: Metadata = {
 
 export default function AboutPage() {
   return (
-    <div className="pt-28 sm:pt-36 pb-32 bg-[#101312] text-[#F4F2EC]">
+    <div className="pt-28 sm:pt-36 pb-32 bg-[#0D100F] text-[#F4F2EC]">
       <div className="max-w-[1520px] mx-auto px-6 sm:px-8 lg:px-12">
         {/* Page Hero */}
         <div className="pb-16 sm:pb-24 border-b border-[#F4F2EC]/10">
           <div className="flex items-center gap-3 mb-4">
-            <span className="w-8 h-[1px] bg-[#E6532F]" />
-            <span className="font-mono text-xs uppercase tracking-[0.25em] text-[#E6532F]">
+            <span className="w-8 h-[1px] bg-[#E04E26]" />
+            <span className="font-mono text-xs uppercase tracking-[0.25em] text-[#E04E26]">
               Corporate Profile & Heritage
             </span>
           </div>
 
           <h1 className="heading-hero font-display font-extrabold uppercase text-[#F4F2EC] tracking-tight">
             Built On Engineering. <br />
-            <span className="text-[#E6532F]">Driven By Progress.</span>
+            <span className="text-[#E04E26]">Driven By Progress.</span>
           </h1>
 
           <div className="mt-12 grid grid-cols-1 lg:grid-cols-12 gap-8 pt-8 border-t border-[#F4F2EC]/10">
@@ -42,7 +42,7 @@ export default function AboutPage() {
               </p>
             </div>
             <div className="lg:col-span-5">
-              <p className="text-sm text-[#B8BAB5] leading-relaxed">
+              <p className="text-sm text-[#A3A7A1] leading-relaxed">
                 {COMPANY_INFO.extendedDescription}
               </p>
             </div>
@@ -50,17 +50,18 @@ export default function AboutPage() {
         </div>
 
         {/* Hero Architectural Visual */}
-        <div className="my-16 relative aspect-[21/9] w-full overflow-hidden bg-[#161B19] border border-[#F4F2EC]/10">
+        <div className="my-16 relative aspect-[21/9] w-full overflow-hidden bg-[#131715] border border-[#F4F2EC]/10">
           <Image
             src="https://images.unsplash.com/photo-1487958449943-2429e8be8625?auto=format&fit=crop&w=2600&q=90"
             alt="NORTHVA engineering construction excellence"
             fill
             priority
+            unoptimized={true}
             sizes="100vw"
             className="object-cover brightness-[0.8] contrast-[1.05]"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#101312]/80 via-transparent to-transparent opacity-50" />
-          <div className="absolute bottom-6 left-6 font-mono text-xs px-3 py-1.5 bg-[#101312]/90 backdrop-blur-sm border border-[#F4F2EC]/15 text-[#B8BAB5]">
+          <div className="absolute inset-0 bg-gradient-to-t from-[#0D100F]/80 via-transparent to-transparent opacity-50" />
+          <div className="absolute bottom-6 left-6 font-mono text-xs px-3 py-1.5 bg-[#0D100F]/90 backdrop-blur-sm border border-[#F4F2EC]/15 text-[#A3A7A1]">
             Engineering Operations across Egypt, KSA, and UAE
           </div>
         </div>
@@ -190,6 +191,7 @@ export default function AboutPage() {
                       src={leader.image}
                       alt={leader.name}
                       fill
+                      unoptimized={true}
                       sizes="(max-width: 768px) 100vw, 25vw"
                       className="object-cover filter grayscale contrast-110 group-hover:grayscale-0 transition-all duration-500"
                     />

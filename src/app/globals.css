@@ -1,0 +1,124 @@
+@import "tailwindcss";
+
+@theme {
+  --color-northva-dark: #101312;
+  --color-northva-light: #F2F0E9;
+  --color-northva-grey: #B8BAB5;
+  --color-northva-text-light: #F4F2EC;
+  --color-northva-text-dark: #111311;
+  --color-northva-accent: #E6532F;
+  --color-northva-surface: #161B19;
+  --color-northva-surface-elevated: #1F2623;
+  --color-northva-border: rgba(244, 242, 236, 0.08);
+  --color-northva-border-strong: rgba(244, 242, 236, 0.2);
+
+  --font-display: var(--font-syne), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-sans: var(--font-inter), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-mono: var(--font-mono), "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+:root {
+  --background: #101312;
+  --foreground: #F4F2EC;
+}
+
+html {
+  background-color: #101312;
+  color: #F4F2EC;
+  font-family: var(--font-sans);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: #101312;
+  color: #F4F2EC;
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+/* Custom Selection */
+::selection {
+  background-color: #E6532F;
+  color: #FFFFFF;
+}
+
+/* Lenis Recommended CSS */
+html.lenis, html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}
+
+/* Architectural Grid and Utility Styles */
+.architectural-grid {
+  background-size: 80px 80px;
+  background-image: 
+    linear-gradient(to right, rgba(244, 242, 236, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(244, 242, 236, 0.03) 1px, transparent 1px);
+}
+
+.architectural-grid-dense {
+  background-size: 24px 24px;
+  background-image: 
+    linear-gradient(to right, rgba(244, 242, 236, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(244, 242, 236, 0.04) 1px, transparent 1px);
+}
+
+.blueprint-grid {
+  background-size: 40px 40px;
+  background-image: 
+    radial-gradient(circle, rgba(230, 83, 47, 0.15) 1px, transparent 1px);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: #101312;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #242B28;
+  border-radius: 0px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #E6532F;
+}
+
+/* Clamp utilities */
+.heading-hero {
+  font-size: clamp(2.5rem, 5.8vw, 6.25rem);
+  line-height: 0.96;
+  letter-spacing: -0.03em;
+}
+
+.heading-display {
+  font-size: clamp(2rem, 3.8vw, 4.25rem);
+  line-height: 1.05;
+  letter-spacing: -0.025em;
+}
+
+.heading-stat {
+  font-size: clamp(2.25rem, 3.6vw, 4rem);
+  line-height: 0.95;
+  letter-spacing: -0.03em;
+}
